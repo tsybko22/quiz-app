@@ -1,10 +1,6 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+//disabled React.StrictMode because 429 (Too Many Requests) problem with API
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
