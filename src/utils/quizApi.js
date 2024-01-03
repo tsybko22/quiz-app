@@ -1,4 +1,4 @@
-const BASE_URL = 'https://opentdb.com/api.php?amount=10&type=multiple';
+const BASE_URL = 'https://opentdb.com/api.php?amount=10&category=9&type=multiple';
 
 export const getQuiz = async () => {
   const res = await fetch(BASE_URL);
