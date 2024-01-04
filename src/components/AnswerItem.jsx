@@ -1,9 +1,14 @@
 import Btn from './Btn';
 
-const AnswerItem = ({ answerText }) => {
+const AnswerItem = ({ answerText, handleAnswerClick }) => {
   return (
     <li>
-      <Btn>{answerText}</Btn>
+      <Btn
+        className="w-full"
+        onClick={() => handleAnswerClick(answerText)}
+      >
+        {answerText}
+      </Btn>
     </li>
   );
 };
